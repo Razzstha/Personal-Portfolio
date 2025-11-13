@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section id="about" className="w-full bg-gray-900 text-gray-100 pt-10 pb-20 px-6">
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1800px] mx-auto">
 
         <motion.h2
           className="text-4xl font-bold mb-8 text-center"

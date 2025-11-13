@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-gray-900 text-gray-100 py-20">
 
-      <div className="max-w-7xl w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-[1800px] w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
         
         {/* Left Side */}
         <motion.div
@@ -41,7 +41,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/deep-ask-077138382/"
+              href="https://www.linkedin.com/in/razz-shrestha/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-600 hover:scale-105 transition-transform duration-300">
@@ -49,7 +49,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://github.com/Twist-KinG"
+              href="https://github.com/Razzstha/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gray-600 hover:scale-105 transition-transform duration-300">
@@ -59,8 +59,8 @@ export default function Contact() {
 
           <p className="mt-6 text-gray-400 italic">
             Or reach out directly at:{" "}
-            <a href="mailto:deepasklight@gmail.com" className="text-blue-500 underline">
-              deepasklight@gmail.com
+            <a href="mailto:razzstha92@gmail.com" className="text-blue-500 underline">
+              razzstha92@gmail.com
             </a>
           </p>
         </motion.div>

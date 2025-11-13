@@ -35,7 +35,7 @@ export default function Projects() {
 
     <section id="projects" className="bg-gray-900 text-gray-100 py-20">
 
-      <div className="max-w-7xl w-full mx-auto px-6">
+      <div className="max-w-[1800px] w-full mx-auto px-6">
 
         <motion.h2
           className="text-4xl font-bold mb-12 text-center"

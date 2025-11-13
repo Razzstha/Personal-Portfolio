@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBriefcase, FaCode, FaHeart, FaGlobe } from "react-icons/fa";
 import { motion } from "framer-motion";
-import photo from "../assets/img/photo.jpeg"; // import properly
+import photo from "../assets/img/profile.jpeg"; // import properly
 
 export default function Hero() {
   const professions = [
@@ -54,16 +54,16 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-gray-900 text-gray-100 min-h-screen flex flex-col justify-center items-center mt-14 px-6 py-12 md:py-0">
 
-      <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-12">
+      <div className="max-w-[1800px] w-full flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-12">
         {/* Left */}
         <div className="md:w-1/2 flex flex-col justify-center text-center md:text-left space-y-4">
-          
+
           <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}>
-            Hi, I’m Dipesh Thing 👋
+            Hi, I’m Raj Shrestha 👋
           </motion.h1>
 
           <motion.h2
@@ -106,7 +106,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}>
-            
+
             {projects.map((project) => (
 
               <button
@@ -125,7 +125,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}>
-            
+
             <button
               onClick={() => scrollToSection("projects")}
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow-md transition duration-300 text-sm sm:text-base">
@@ -156,18 +156,21 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}>
-          
+
           <div className="relative w-60 sm:w-72 md:w-80 h-60 sm:h-72 md:h-80 flex items-center justify-center">
 
             <div className="absolute inset-0 rounded-full p-1 animate-spin-slow">
               <div className="w-full h-full rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-blue-500 blur-xl animate-gradient bg-[length:200%_200%]"></div>
             </div>
-
-            <div className="relative w-52 sm:w-64 md:w-72 h-52 sm:h-64 md:h-72 rounded-full overflow-hidden bg-gray-900 border-4 border-gray-900">
-
-              <img src={photo} alt="Dipesh Thing" className="w-full h-full object-cover rounded-full" />
-
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-[25rem] md:h-80 rounded-full overflow-hidden bg-gray-900 border-4 border-gray-900 mx-auto">
+              <img
+                src={photo}
+                alt="Raj Shrestha"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
+
+
 
           </div>
 
@@ -176,8 +179,8 @@ export default function Hero() {
       </div>
 
       {/* Achievements */}
-      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-12">
-        
+      <div className="max-w-[1800px] w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-12">
+
         {[
           { icon: FaBriefcase, title: "2+ Years", text: "Building scalable web apps with MERN stack.", color: "text-blue-500" },
           { icon: FaCode, title: "10+ Projects", text: "Delivered EMS, LMS, educational platforms.", color: "text-green-500" },
@@ -191,7 +194,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 * index }}>
-            
+
             <item.icon className={`w-10 h-10 mx-auto mb-4 ${item.color} ${item.pulse ? "animate-pulse" : ""} ${item.spin ? "animate-spin-slow" : ""}`} />
             <h2 className={`text-2xl font-bold ${item.color}`}>{item.title}</h2>
             <p className="text-gray-300 text-sm mt-2">{item.text}</p>
@@ -210,7 +213,7 @@ export default function Hero() {
         }
         .animate-gradient { animation: gradient-move 5s ease infinite; }
       `}</style>
-      
+
     </section>
 
   );

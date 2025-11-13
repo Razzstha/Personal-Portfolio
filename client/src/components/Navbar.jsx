@@ -31,16 +31,16 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? "bg-gray-900 shadow-md" : "bg-gray-800"}`}>
 
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 relative">
+      <div className="max-w-[1800px] mx-auto flex items-center justify-between px-6 py-4 relative">
         {/* Logo */}
         <h1
-          className="text-xl font-bold text-white cursor-pointer hover:text-blue-400"
+          className="text-4xl font-bold text-white cursor-pointer hover:text-blue-400"
           onClick={() => scrollToSection("hero")}>
-          DeepAskLight
+          Raj Shrestha
         </h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 font-medium">
+        <ul className="hidden md:flex space-x-8 text-xl font-medium">
           {navItems.map((item) => (
             
             <li key={item.id} className="text-gray-100 cursor-pointer hover:text-blue-400" onClick={() => scrollToSection(item.id)}>
