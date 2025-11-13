@@ -14,7 +14,7 @@ export default function Hero() {
   ];
 
   const skills = ["React", "Node.js", "MongoDB", "JavaScript", "Tailwind", "Express"];
-  const projects = ["EMS System", "LMS Platform", "Gyaandeep Nepal"];
+  const projects = ["BookBay", "DoctorApp", "Toodler-Fun Learning"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");

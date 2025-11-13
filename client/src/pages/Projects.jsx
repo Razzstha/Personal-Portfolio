@@ -5,28 +5,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "EMS System",
-    desc: "Manage employees, salaries & leaves efficiently.",
-    img: "src/assets/img/ems.png",
-    preview: "src/assets/img/ems_preview.png",
+    title: "BookBay",
+    desc: "An online book store",
+    img: "src/assets/img/a.png",
+    preview: "src/assets/img/Homepage.png",
     live: "https://ems-system.vercel.app",
-    github: "https://github.com/your-username/ems",
+    github: "https://github.com/Razzstha/",
   },
   {
-    title: "LMS Platform",
-    desc: "Online course platform with quizzes and progress tracking.",
-    img: "src/assets/img/lms.png",
-    preview: "src/assets/img/lms_preview.png",
+    title: "DoctorApp",
+    desc: "Online appointment booking system",
+    img: "src/assets/img/Doctor.png",
+    preview: "src/assets/img/onlogin.png",
     live: "https://lms-platform.vercel.app",
-    github: "https://github.com/your-username/lms",
+    github: "https://github.com/Razzstha/",
   },
   {
-    title: "Gyaandeep Nepal",
-    desc: "Educational resource sharing platform for students.",
-    img: "src/assets/img/gyaandeep.png",
-    preview: "src/assets/img/gyaandeep_preview.png",
+    title: "Toodler-Fun Learning",
+    desc: "Educational resource sharing platform for toddlers.",
+    img: "src/assets/img/Toodler.jpg",
+    preview: "src/assets/img/tod.png",
     live: "https://gyaandeep-nepal.vercel.app",
-    github: "https://github.com/your-username/gyaandeep",
+    github: "https://github.com/Razzstha/",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Projects() {
               {/* Project Image with overlay buttons */}
               <div className="relative group">
 
-                <img src={project.img} alt={project.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"/>
+                <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
 
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                  
@@ -90,7 +90,7 @@ export default function Projects() {
                 {project.preview && (
 
                   <div className="mb-4 border border-gray-700 rounded overflow-hidden">
-                    <img src={project.preview} alt={`${project.title} preview`} className="w-full h-32 object-cover"/>
+                    <img src={project.preview} alt={`${project.title} preview`} className="w-full h-60 object-cover"/>
                   </div>
                 )}
 
